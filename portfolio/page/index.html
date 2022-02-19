@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<title>My Profile</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<title>My Profile</title>
+	</head>
+	<body>
+
+		<div class="audio_wrap">
+			<div class="audio_button">
+				<p>
+					<i class="bi bi-music-note-list mr-2"></i>
+					<button id="play">ON</button>
+					<span>/</span>
+					<button id="stop">OFF</button>
+				</p>
+			</div>
+			<audio id="audio" preload="auto" src="../portfolio_img/fluidity.mp3" loop="infinite"　type="audio/mp3">
+			</audio>
+		</div>
+
+		<!-- Navbar -->
+		<div class="menu">
+			<button class="menubutton">Menu</button>
+		</div>
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li>
+					<button class="closebutton">&#10005;</button>
+				</li>
+
+				<li>
+					<a href="#home">
+						<i class="bi bi-house mr-2"></i>
+						Home
+					</a>
+				</li>
+
+				<li>
+					<a href="#about">
+						<i class="bi bi-person mr-2"></i>
+						About
+					</a>
+				</li>
+
+				<li>
+					<a href="#contact">
+						<i class="bi bi-envelope mr-2"></i>
+						Contact
+					</a>
+				</li>
+
+				<li>
+					<a href="../Hirotoshi_resume.pdf" download="Resume.pdf">
+						<i class="material-icons mr-2">picture_as_pdf</i>
+						Resume
+					</a>
+				</li>
+
+				<li>
+					<a href="https://www.facebook.com/hirotoshi.nishizawa.90">
+						<img width="50" height="50" class="mr-2" src="../portfolio_img/fblogo.png"/>
+					</a>
+					<a href="https://www.linkedin.com/in/hirotoshi-nishizawa-946532179/">
+						<img width="50" height="50" src="../portfolio_img/linkedinlogo.png"/>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Home -->
+		<div class="jumbotron jumbotron-fluid">
+
+			<video autoplay muted loop poster="../portfolio_img/bg.png">    
+				<source src="../portfolio_img/hexagon.mp4" type="video/mp4">
+			</video>
+
+			<div class="container text-white text-center">
+				<h1 class="aa mb-5"><a id="home">Hirotoshi Nishizawa</h1>
+				<p class="lead mb-0">- Web Development with Responsive Design</p>
+				<p class="lead">- Japanese-English Bilingual</p>
+			</div>
+		</div>
+
+		<!-- About -->
+		<div class="container text-dark">
+			<h3 class="text-center text-weight-bold mb-5">
+				<a id="about">About</a>
+			</h3>
+
+			<div class="row justify-content-center text-center mb-5">
+				<img src="../portfolio_img/hiro_profile.jpg" class="myimage p-2">
+				<p class="pt-5 mb-5 mx-5 aboutP">
+					Hello! I'm Hirotoshi Nishizawa. You can call me Hiro. I'm 29 years old. I'm based in Mandaluyong city, Philippines. I finished a Bootcamp course for coding in Zuitt while working. I am a Japanese-English bilingual, and willing to relocate for a new career.
+				</p>
+			</div>
+
+
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">Bio</a>
+				</li>
+
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+				</li>
+
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+				</li>
+
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+				</li>
+			</ul>
+
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active text-center mb-5" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+					<p class="mt-5 mb-0">Full Name: Hirotoshi Nishizawa</p>
+					<p class="my-0">Birthdate: September 5, 1992</p>
+					<p class="my-0">Gender: Male</p>
+					<p class="my-0">Place of Birth: Kumamoto, Japan</p>
+					<p>Nationality: Japanese</p>
+				</div>
+
+				<div class="tab-pane fade text-center" id="education" role="tabpanel" aria-labelledby="education-tab">
+					<h4 class="mt-5">Bachelor of Arts in English Language</h4>
+					<p class="mb-0">Far Eastern University</p>
+					<p class="py-0 mb-5">Manila, Philippines, June 2018</p>
+					<h4>Higashichikushi Senior High-School</h4>
+					<p class="py-0">Fukuoka, Japan, March 2011</p>
+				</div>
+
+				<div class="tab-pane fade text-center" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+					<h4 class="mt-5">Telus International Philippines</h4>
+					<p class="mb-0">Customer Service Representative</p>
+					<p class="mb-5">January 7, 2019 to December 29, 2021</p>
+
+					<h4>J-K Network Manpower Services</h4>
+					<p class="mb-0">Language Assessor</p>
+					<p class="mb-5">June 1, 2018 to August 31, 2018</p>
+				</div>
+
+				<div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+					<div class="d-block d-md-flex mt-5">
+						<img width="90" src="../portfolio_img/logo-html5.png"/>
+						<img width="90" src="../portfolio_img/logo-css3.png"/>
+						<img width="90" src="../portfolio_img/logo-bootstrap.png"/>
+						<div class="d-md-flex">
+							<img width="90" src="../portfolio_img/logo-javascript.png"/>
+							<img width="90" src="../portfolio_img/logo-react.png"/>
+							<img width="90" src="../portfolio_img/logo-sublime-text-3.png"/>
+						</div>
+					</div>
+					<div class="d-block d-md-flex">
+						<img width="90" src="../portfolio_img/logo-git.png"/>
+						<img width="90" src="../portfolio_img/logo-nodejs.png"/>
+						<img width="90" src="../portfolio_img/logo-mongodb.png"/>
+						<div class="d-md-flex">
+							<img width="90" src="../portfolio_img/logo-expressjs.png"/>
+							<img width="90" src="../portfolio_img/logo-postman.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact -->
+		<div class="container my-5 text-dark">
+			<h3 class="text-center text-weight-bold mb-5"><a id="contact">Contact</a></h3>
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-6 mb-5">
+					<form class="rounded">
+						<div class="form-group">
+							<label for="name">Name:</label>
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" placeholder="email@sample.com">
+						</div>
+					  
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<textarea class="form-control" placeholder="Message" id="message" rows="3"></textarea>
+						</div>
+
+						<div class="text-center">
+							<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+							  Send Message
+							</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h5 class="modal-title" id="exampleModalLabel">Thank you for sending a message!</h5>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body">
+							        Please expect a response within next 3 days.
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Google Map -->
+				<div class="col-10 col-md-6 mb-5 embed-responsive iframe embed-responsive-16by9 rounded">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61780.095806495076!2d121.00357120175832!3d14.584483972090307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c835c77b9b79%3A0xdc4947c8b9d237f8!2sMandaluyong%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1632843695996!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-80 mx-auto"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer text-white text-weight-light">
+			<div class="col">Copyright &copy; My Website 2022</div>
+		</div>
+
+		<!-- Bootstrap Bundle -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/scriptjq.js"></script>
+
+		<!-- My JS -->
+		<script type="text/javascript" src ="../assets/js/index.js"></script>
+	</body>
+</html>
